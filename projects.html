@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <title>Project</title>
+    <style>
+       .font_Cinzel{
+        font-family: 'Cinzel', serif;
+        font-size: 40px;
+      }
+      .font_body{
+        font-family: 'Sniglet', cursive;
+        color: black;
+        font-size: 18px;
+      }
+        .w-20 {
+    width: 7rem;
+}
+.h-20 {
+    height: 10rem;
+}
+.rounded-lg {
+    border-radius: 56.5rem;
+}
+.header{
+  display: flex;
+}
+    </style>
+</head>
+<body>
+    <header class="text-gray-500 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-teal-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">PortFolio</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a  href="index.html" class="mr-5 hover:text-white">Home</a>
+            <a href="about.html" class="mr-5 hover:text-white">About</a>
+            <a href="projects.html" class="mr-5 hover:text-white">Projects</a>
+            <a href="contact.html" class="mr-5 hover:text-white">Contact</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="https://drive.google.com/file/d/1o7LMFIznu87zIuhw8vNj54o25LE_yc5u/view?usp=sharing" target="_blank"> Explore</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- <section class="text-gray-500 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-col">
+              <div class="lg:w-4/6 mx-auto"> -->
+                <!-- <div class="flex flex-col sm:flex-row mt-10">
+                  <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="15" cy="10" r="6"><img alt="content" class="object-cover object-center h-full w-full" src="redshirt.jpg"></circle>
+                      </svg>
+                    </div>
+                    <div class="flex flex-col items-center text-center justify-center">
+                      <h2 class="font-medium title-font mt-4 text-white text-lg">Deepa Pandey</h2>
+                      <div class="w-12 h-1 bg-teal-500 rounded mt-2 mb-4"></div>
+                      <p class="text-base text-gray-600">Hi, myself Deepa Pandey! A backend developer highly enthusiast to develop and explore my skills</p>
+                    </div>
+                  </div>
+                  <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                    <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+                    <a class="text-teal-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+
+
+              <section class="text-gray-500 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="text-2xl font-medium title-font mb-4 text-white wow animate__animated animate__zoomIn font_Cinzel">Projects</h1>
+                  
+                  </div>
+                  <div class="flex flex-wrap -m-4 ">
+                    <div class="p-4 lg:w-1/4 md:w-1/2  wow animate__animated animate__zoomIn">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/lappy.jpg">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white">React Movie Api</h2>
+                          <h3 class="text-gray-600 mb-3">Completly Reactjs based project</h3>
+                          <p class="mb-4">This project uses third party OMDb API to fetch movies by Axios, display them, with an additional functionality of dark-mode</p>
+                          <span class="inline-flex">
+                            <a href="https://github.com/deepak821/react-movie-api" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            <a class="text-gray-700">
+                                
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                              
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:w-1/4 md:w-1/2 wow animate__animated animate__zoomIn">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/space.jpg">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white">ToDo List</h2>
+                          <h3 class="text-gray-600 mb-3">Nodejs, Express, MongoDB, HTML&CSS, Pug</h3>
+                          <p class="mb-4">CRUD operation implementation to make simple ToDoList</p>
+                          <span class="inline-flex">
+                            <a class="text-gray-700">
+                                
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a href="https://github.com/deepak821/ToDo-List" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:w-1/4 md:w-1/2 wow animate__animated animate__zoomIn">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/hello.png">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white">Interior-Designing</h2>
+                          <h3 class="text-gray-600 mb-3">Business Website</h3>
+                          <p class="mb-4">A frontend Web project made using Html, Css, JS which displays the interior designing .</p>
+                          <span class="inline-flex">
+                            <a class="text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a href="https://github.com/deepak821/Interior-Designing" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:w-1/4 md:w-1/2 wow animate__animated animate__zoomIn">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/game.jpg">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white">GYM Website</h2>
+                          <h3 class="text-gray-600 mb-3">Business Website</h3>
+                          <p class="mb-4">This is a gym website made with the help of html,pug file, css, javascript, node.js,express,mongodb</p>
+                          <span class="inline-flex">
+                            <a class="text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a href="https://github.com/deepak821/GYM-WEBSITE" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="p-4 lg:w-1/4 md:w-1/2 wow animate__animated animate__zoomIn">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="images/planet.jpg">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white">CoronaTracker</h2>
+                          <h3 class="text-gray-600 mb-3">Api Based</h3>
+                          <p class="mb-4">Used the mapbox API to fetch corona data in json and displayed it through the map</p>
+                          <span class="inline-flex">
+                            <a href="https://deepak821.github.io/coronatracker/" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                            <a class="text-gray-700">
+                                
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                              
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-700">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                  <br><br> <hr>
+                  </section>
+                <!-- </div> -->
+              
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+                <section class="text-gray-500 bg-gray-900 body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                      <div class="flex flex-col text-center w-full mb-20">
+                        <h1 class="text-2xl font-medium title-font mb-4 text-white tracking-widest wow animate__animated animate__zoomIn font_Cinzel">Achievements</h1>
+                        
+                      </div>
+                      <div class="flex flex-wrap -m-4">
+                        <div class="p-4 lg:w-1/2">
+                          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left wow animate__animated animate__zoomIn">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/HacktoberFest.jpg">
+                            <div class="flex-grow sm:pl-8 ">
+                              <h2 class="title-font font-medium text-lg text-white">HacktoberFest</h2>
+                              <h3 class="text-gray-600 mb-3">Open Source Contribution</h3>
+                              <p class="mb-4">Successfully did the 4+ PRs and made through the contest</p>
+                              <span class="inline-flex">
+                                <a class="text-gray-700">
+                                  <a href="https://drive.google.com/file/d/1WwPpvAFGsmqurKANL8XjMDEvNv8rKPre/view?usp=sharing" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                  </svg>
+                                </a>
+                                
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                  </svg>
+                                </a>
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                  </svg>
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="p-4 lg:w-1/2">
+                          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left wow animate__animated animate__zoomIn">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/googlecloud.jpg">
+                            <div class="flex-grow sm:pl-8">
+                              <h2 class="title-font font-medium text-lg text-white">Google Cloud Program</h2>
+                              <h3 class="text-gray-600 mb-3">30 Days of Google Cloud program</h3>
+                              <p class="mb-4">Successfully completed Cloud Engineering and Data Science & Machine Learning Track in the 30 Days of Google Cloud program</p>
+                              <span class="inline-flex">
+                                <a class="text-gray-700">
+                                  <a href="https://drive.google.com/file/d/1B1numHx7i2vNHbOfNIwpVURTeGHbs5IC/view?usp=sharing" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                  </svg>
+                                </a>
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                  </svg>
+                                </a>
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                  </svg>
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="p-4 lg:w-1/2">
+                          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left wow animate__animated animate__zoomIn">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="images/postman.png">
+                            <div class="flex-grow sm:pl-8">
+                              <h2 class="title-font font-medium text-lg text-white">Postman Student Expert</h2>
+                              <h3 class="text-gray-600 mb-3">Postman</h3>
+                              <p class="mb-4">Postman Student Experts are proficient in the essential skills involved in building and testing API requests in Postman and I earned a badge.</p>
+                              <span class="inline-flex">
+                                <a class="text-gray-700">
+                                  <a href="https://drive.google.com/file/d/1UZ8i6Q-C9h03tNv5I83FaYCP0l-JtkiU/view?usp=sharing" target="_blank" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                              </a>
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                  </svg>
+                                </a>
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                  </svg>
+                                </a>
+                                <a class="ml-2 text-gray-700">
+                                  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                  </svg>
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div><br><br><br><hr>
+                    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+
+
+              <section class="text-gray-500 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full mb-20">
+                        <h1 class="text-2xl font-medium title-font mb-4 text-white wow animate__animated animate__zoomIn font_Cinzel">Experience</h1>
+                    
+                      </div>
+        
+                  <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col wow animate__animated animate__zoomIn">
+                    <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-teal-400 bg-gray-800 flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                      <h2 class="text-white text-lg title-font font-medium mb-2">Uped(March 2021 - Present)</h2>
+                      <p class="leading-relaxed text-base"><strong> Internship as a MERN stack developer</strong></p>
+                      <a href="https://drive.google.com/file/d/1ZiQeg8EYGqF9anQOYPUJ73gw-V9Fy5hG/view?usp=sharing" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check Offer letter
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col wow animate__animated animate__zoomIn">
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                      <h2 class="text-white text-lg title-font font-medium mb-2">DSC KGEC (Feburary 2021 - Present)</h2>
+                      <p class="leading-relaxed text-base"><strong>Core Member in Web Development Team</strong> <br> Google Developer Student Clubs are community groups for college and university students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+                      <a href="" class="mt-3 text-teal-500 inline-flex items-center hover:text-white tracking-wider">Check out
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-teal-400 bg-gray-800 flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+
+
+
+
+                  
+
+
+
+
+                  
+
+
+
+                  <button class="flex mx-auto mt-20 text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg wow animate__animated animate__zoomIn data-toggle='tooltip' data-placement='top' title='Github'">
+                       <a href="https://github.com/deepak821" target="_blank">
+                        <div class="header" style="display: flex;">
+                        <img src="images/github (2).png" alt="github">&nbsp;&nbsp;Check more at GitHub
+                        </div>
+                      </a></button>
+                </div>
+              </section>
+
+
+            </div>
+        <!-- </section> -->
+            </div>
+            </div>
+          <!-- </section> -->
+        </section>
+      </header>
+
+
+
+      
+      <footer class="text-gray-500 bg-gray-900 body-font">
+        <div class="bg-gray-800">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-600 text-sm text-center sm:text-left">© 2020 portfolio —
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepapandey364@gmail.com" rel="noopener noreferrer" class="text-gray-500 ml-1 hover:text-white tracking-wider" target="_blank">pandeydeepak821@gmail.com</a>
+            </p>
+         
+          </div>
+        </div>
+      </footer>
+
+
+
+<!-- ANIMATION SCRIPTS -->
+
+
+<script>
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          },
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+      );
+      wow.init();
+    </script>
+
+</body>
+</html>
